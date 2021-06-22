@@ -61,8 +61,8 @@ function draw() {
     if (monkey.isTouching(obstacleGroup)){
       gameState = "END";
     }
-    camera.position.x = displayWidth/2
-      camera.position.y = monkey[index-1].y
+    camera.position.x = 200
+      camera.position.y = monkey.y
   }
   
   if (gameState === "END"){
@@ -80,7 +80,7 @@ function draw() {
       score = 0;
       gameState = "PLAY"; 
     }
-    if(gameState= "END"){
+    if(gameState==="END"){
       console.log("game ended")
     }
     drawSprites();
